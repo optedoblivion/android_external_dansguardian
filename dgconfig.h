@@ -8,7 +8,7 @@
 /* #undef DGDEBUG */
 
 /* Record configure-time options */
-#define DG_CONFIGURE_OPTIONS " '--enable-pcre=no' '--enable-clamav=no' '--with-proxyuser=root' '--with-proxygroup=root' '--with-piddir=/sdcard/dansguardian' '--with-logdir=/sdcard/dansguardian' '--with-sysconfsubdir=dansguardian' '--prefix='"
+#define DG_CONFIGURE_OPTIONS " '--enable-pcre=no' '--enable-clamd=no' '--enable-segv-backtrace=no' '--enable-icap=no' '--enable-kavd=no' '--enable-ntlm=no' '--sysconfdir=/system/etc' '--with-sysconfsubdir=dansguardian' '--prefix='"
 
 /* Define to enable ClamD content scanner */
 /* #undef ENABLE_CLAMD */
@@ -254,8 +254,9 @@
 /* Define as `fork' if `vfork' does not work. */
 /* #undef vfork */
 
-#define __CONFFILE "herp"
-#define __PIDDIR "/sdcard"
-#define __LOGLOCATION "/sdcard"
+#define __CONFFILE "dansguardian.conf"
+#define __PIDDIR "/data/local/tmp/dansguardian"
+#define __LOGLOCATION "/data/local/tmp/dansguardian"
 #define __PROXYUSER "root"
 #define __PROXYGROUP "root"
+

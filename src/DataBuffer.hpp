@@ -69,7 +69,7 @@ public:
 	int getTempFileFD();
 
 	void reset();
-private:
+//private:
 	// DM plugins do horrible things to our innards - this is acceptable pending a proper cleanup
 	friend class DMPlugin;
 	friend class dminstance;

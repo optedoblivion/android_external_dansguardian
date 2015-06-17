@@ -14,7 +14,7 @@
 case "$1" in
 start)
         if [ -f /sbin/dansguardian ] &&
-           [ -f /etc/dansguardian/dansguardian.conf ]; then
+           [ -f /system/etc/dansguardian/dansguardian.conf ]; then
                 /sbin/dansguardian
                 echo "DansGuardian started."
         fi

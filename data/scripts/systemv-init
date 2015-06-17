@@ -9,7 +9,7 @@
 #              extensions and PICS labelling.
 # processname: dansguardian
 # pidfile: /var/run/dansguardian.pid
-# config: /etc/dansguardian/dansguardian.conf
+# config: /system/etc/dansguardian/dansguardian.conf
 
 ### BEGIN INIT INFO
 # Provides:     dansguardian
@@ -56,7 +56,7 @@ function wait_for_pid()
 case "$1" in
 start)
         if [ -f /sbin/dansguardian ] &&
-           [ -f /etc/dansguardian/dansguardian.conf ]; then
+           [ -f /system/etc/dansguardian/dansguardian.conf ]; then
                 echo -n "Starting dansguardian: "
                 if /sbin/dansguardian 2> /dev/null; then
                         echo -e "\\033[60G\c"
