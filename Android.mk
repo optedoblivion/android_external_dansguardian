@@ -32,13 +32,10 @@ include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 
-#	src/contentscanners/icapscan.cpp 
 #	src/contentscanners/avastdscan.cpp 
 #	src/contentscanners/kavdscan.cpp 
-#	src/contentscanners/commandlinescan.cpp 
 #	src/contentscanners/clamdscan.cpp 
 
-#	src/authplugins/dnsauth.cpp
 #	src/authplugins/ntlm.cpp \
 
 LOCAL_SRC_FILES := \
@@ -78,7 +75,10 @@ LOCAL_SRC_FILES := \
 	src/DynamicIPList.cpp \
 	src/dansguardian.cpp \
 	src/FatController.cpp \
-	src/DynamicURLList.cpp 
+	src/DynamicURLList.cpp \
+	src/contentscanners/icapscan.cpp \
+
+#	src/contentscanners/commandlinescan.cpp 
 
 
 #        $(LOCAL_PATH)/../iconv/include \
